@@ -58,23 +58,21 @@ $firaCode: 'FiraCode';
     font-weight: 600;
 }
 
-:root {
+@import '../../node_modules/bootstrap/dist/css/bootstrap.css';
+@import '../../node_modules/bootstrap-icons/font/bootstrap-icons.css';
+
+:root,
+body,
+html {
     font-family: $firaCode;
     font-size: 1.2rem;
+    line-height: 1.6rem;
+    word-spacing: 0.3rem;
+    letter-spacing: 0.2rem;
     font-weight: 600;
-
     color: $primary;
     background-color: $black;
 
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
-}
-
-body,
-html {
     margin: 0;
     padding: 0;
     display: flex;
@@ -90,17 +88,4 @@ html {
     margin: 0 auto;
     padding: 2rem;
     text-align: center;
-}
-
-@media (prefers-color-scheme: light) {
-    :root {
-        color: #213547;
-        background-color: #ffffff;
-    }
-    a:hover {
-        color: #747bff;
-    }
-    button {
-        background-color: #f9f9f9;
-    }
 }
